@@ -71,10 +71,10 @@ Nếu user thực sự muốn cài OpenClaw cho server khác:
 
 ## Agent DNA cho agent mới
 
-Khi cài agent mới, sinh DNA với:
-- `id`: `ACN-YYYY-XXXX` (năm + 4 số ngẫu nhiên)
-- `parentId`: ID của agent đang cài (agent hiện tại)
-- `generation`: generation của agent hiện tại + 1
+Khi cài agent mới:
+- **Đọc DNA của chính mình** (trong config/INSTRUCTIONS) → lấy `_agentDna.id` làm `parentId`
+- Nếu không có DNA → `parentId` = `ACN` (orphan)
+- **Server sinh ID** — gọi birth ping, server trả về ID mới (hierarchical format: `ACN-000-001-...`)
 
 ---
 

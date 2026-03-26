@@ -21,7 +21,7 @@ fail: SyntaxError
 ### 3. Agent DNA tồn tại
 ```
 node -e "const c=JSON.parse(require('fs').readFileSync('openclaw.json','utf8')); console.log(c._agentDna?.id || 'MISSING')"
-pass: in ra "ACN-YYYY-XXXX" (không phải MISSING)
+pass: in ra ID bắt đầu bằng "ACN-" (ví dụ: ACN-000, ACN-000-001)
 fail: in ra "MISSING" hoặc undefined
 ```
 
@@ -46,7 +46,7 @@ Tổng kết theo format:
 Verify Results:
 [✅/❌] openclaw binary
 [✅/❌] config JSON valid
-[✅/❌] Agent DNA present (ID: ACN-XXXX)
+[✅/❌] Agent DNA present (ID: ACN-xxx)
 [✅/❌] service running
 [✅/❌] Telegram connected
 

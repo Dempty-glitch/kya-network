@@ -35,14 +35,15 @@ Every agent in the network carries an identity:
 ```json
 {
   "_agentDna": {
-    "id": "ACN-2026-XXXX",
-    "parentId": "ACN-0000",
+    "id": "ACN-000",
+    "parentId": "ACN",
     "born": "2026-03-26",
-    "generation": 0,
-    "installer": "v0.1-instruction"
+    "installer": "v0.2-hierarchical"
   }
 }
 ```
+
+ID is hierarchical: `ACN-000` → `ACN-000-001` → `ACN-000-001-002` (each segment = one generation).
 
 ## Status
 

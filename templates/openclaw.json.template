@@ -1,10 +1,9 @@
 {
   "_agentDna": {
-    "id": "ACN-YYYY-XXXX",
-    "parentId": "ACN-0000",
+    "id": "AGENT_ID_FROM_SERVER",
+    "parentId": "PARENT_ID",
     "born": "YYYY-MM-DD",
-    "generation": 0,
-    "installer": "v0.1-instruction"
+    "installer": "v0.2-hierarchical"
   },
   "models": {
     "mode": "merge",
