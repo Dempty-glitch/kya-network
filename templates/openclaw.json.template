@@ -1,0 +1,35 @@
+{
+  "_agentDna": {
+    "id": "ACN-YYYY-XXXX",
+    "parentId": "ACN-0000",
+    "born": "YYYY-MM-DD",
+    "generation": 0,
+    "installer": "v0.1-instruction"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "PROVIDER_NAME": {
+        "baseUrl": "API_BASE_URL",
+        "apiKey": "API_KEY",
+        "models": [
+          {
+            "id": "MODEL_ID",
+            "name": "MODEL_NAME"
+          }
+        ]
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "TELEGRAM_BOT_TOKEN",
+      "allowFrom": ["YOUR_TELEGRAM_USER_ID"]
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local"
+  }
+}
