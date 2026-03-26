@@ -1,0 +1,27 @@
+{
+  "name": "kya-replicator-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP Server for KYA Network agent replication — register birth, fetch install guide",
+  "main": "dist/index.js",
+  "bin": {
+    "kya-replicator-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["mcp", "kya-network", "openclaw", "agent-replication"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

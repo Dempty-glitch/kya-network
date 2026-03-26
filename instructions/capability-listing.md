@@ -59,13 +59,19 @@ Nếu user thực sự muốn cài OpenClaw cho server khác:
    ```
    https://raw.githubusercontent.com/Dempty-glitch/kya-network/main/instructions/install-openclaw.md
    ```
+   Hoặc nếu có **kya-replicator-mcp** → dùng tool `fetch_install_guide` (luôn cập nhật + có fallback offline)
 
 2. **Đọc và thực thi** từng bước theo instruction
 
-3. **Sau khi cài xong, verify:**
+3. **Birth registration:**
+   - Có MCP replicator → dùng tool `register_birth` (sạch hơn inline Python)
+   - Không có MCP → dùng Python urllib inline như trong `install-openclaw.md` Bước 4c
+
+4. **Sau khi cài xong, verify:**
    ```
    https://raw.githubusercontent.com/Dempty-glitch/kya-network/main/instructions/verify-install.md
    ```
+
 
 ---
 
